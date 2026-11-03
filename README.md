@@ -10,7 +10,7 @@
 
 | 项目 | 设置 |
 |---|---|
-| 股票组合 | 18 只美股（AAPL、MSFT、NVDA、GOOGL、AMZN、JPM、V、MA、XOM、CVX、PG、KO、WMT、MCD、JNJ、UNH、CAT、HON），每组合初始 USD 25,000,000 |
+| 股票组合 | **18 只跨行业美股**，每组合初始 USD 25,000,000：<br>科技 5（AAPL、MSFT、NVDA、GOOGL、AMZN）· 金融 3（JPM、V、MA）· 能源 2（XOM、CVX）<br>消费 4（PG、KO、WMT、MCD）· 医疗 2（JNJ、UNH）· 工业 2（CAT、HON） |
 | 权重方案 | 等权（1/18）与市值加权 |
 | 对冲工具 | E-mini S&P 500 期货（ES），合约乘数 USD 50 / 指数点 |
 | 市场代理 | SPY（复权价） |
