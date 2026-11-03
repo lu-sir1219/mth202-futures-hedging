@@ -14,6 +14,7 @@
 | 权重方案 | 等权（1/18）与市值加权 |
 | 对冲工具 | E-mini S&P 500 期货（ES），合约乘数 USD 50 / 指数点 |
 | 市场代理 | SPY（复权价） |
+| 数据来源 | **Bloomberg 终端**（ES 季度合约 `PX_LAST`）+ **Yahoo Finance**（股票、SPY、无风险利率） |
 | 估计期 | 2023-01-01 – 2024-12-31（502 个日度观测） |
 | 评估期 | 2025-01-01 – 2025-12-31（250 个交易日，**样本外**） |
 | 规模 | 2 种权重 × 3 种策略 = **6 条回测组合** |
@@ -143,7 +144,7 @@ python code/L4/L4_plot.py
 python code/L4/L4_cost_sensitivity.py
 ```
 
-数据来源：股票与 SPY 行情由 **Bloomberg 终端**导出；ES 期货取 Yahoo Finance `ES=F` 连续序列并经换月拼接（见 `build_roll_adjusted.py`）。
+**数据来源**：18 只美股、SPY、13 周国库券利率与历史股本由 **Yahoo Finance（`yfinance`）** 批量抓取（见 `code/L1_L2/data_collect.py`）；E-mini S&P 500 期货采用 **Bloomberg 终端导出的 13 份季度合约 `PX_LAST`**（ESH23 → ESH26），按「到期前第 5 个 Bloomberg 有效日报价日」规则换月拼接（见 `code/L4/build_roll_adjusted.py`）。早期扩展分析曾使用 Yahoo `ES=F` 连续报价，正式结果均基于 Bloomberg 季度合约。
 
 ---
 
