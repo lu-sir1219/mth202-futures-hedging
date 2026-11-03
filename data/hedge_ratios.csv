@@ -1,0 +1,7 @@
+﻿Portfolio,Holding_Assumption,Method,Hedge_Ratio_Value_Basis,Contracts_Unrounded,Contracts_Signed,Direction
+Equal-weight,Buy-and-hold,Minimum-Variance,0.717116584452,60.4065690479,60,SHORT
+Equal-weight,Monthly rebalance,Minimum-Variance,0.753661827705,63.4849705349,63,SHORT
+Equal-weight,Quarterly rebalance,Minimum-Variance,0.75586264989,63.6703575698,64,SHORT
+Market-cap-weight,Buy-and-hold,Minimum-Variance,1.04822959663,88.297990703,88,SHORT
+Equal-weight,N/A (target weights),CAPM,0.781672222222,65.8444360209,66,SHORT
+Market-cap-weight,N/A (target weights),CAPM,1.22637407024,103.304053425,103,SHORT
